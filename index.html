@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kfc site</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+   <section>
+       <div class="circle"> </div>
+       <header>
+           <a href="#"  ><img src="logo.png"class="logo"></a>
+           <ul>
+               <li><a href="#">home</a></li>
+               <li><a href="#">menu</a></li>
+               <li><a href="#">delikaci</a></li>
+               <li><a href="#"> contact</a></li> 
+           </ul>
+       </header>
+       <div class="content">
+           <div class="textBox">
+               <h2> you just wonder what is up<br>feel <span>KFC</span></h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Minima pariatur quaerat maxime error<br> facere dolorem repudiandae quidem impedit, suscipit saepe aliquam perspiciatis<br> quod enim non vitae at similique, quibusdam aliquid?</p>
+              <a href="#">Learn More</a>
+
+           </div>
+       
+       <div class="imgBox">
+           <img src="img1.jfif" class="KFC" width="150%" height="90%">
+             
+       </div>
+    </div>
+       <ul class="images">
+           <li><img src="img1.jfif " onclick="imgSlider('img1.jfif'); changeCircleColor('#ff0000')"></li>
+           <li><img src="images (2).jfif" onclick="imgSlider('images (2).jfif'), Height = 90% changeCircleColor('rgb(240,248,255)')"></li>
+           <li><img src="images (3).jfif" onclick="imgSlider('images (3).jfif'),Height =90% changeCircleColor('#FFF5EE')"></li>
+           <li><img src="images (6).jfif" onclick="imgSlider('images (6).jfif'), Height =90%   changeCircleColor('#D2691E')"></li>
+       </ul>
+<script type="text/javascript">
+    function imgSlider(anything){
+        document.querySelector('.KFC').src =anything;
+    }
+    function changeCircleColor(color){
+        const circle = document.querySelector('.circle');
+        circle.style.background = color;
+    }
+</script>
+    
+       </section> 
+</body>
+</html>
